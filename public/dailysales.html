@@ -1,0 +1,240 @@
+<!-- The provided code snippet is the beginning of an HTML document. Here is a breakdown of what each
+part does: -->
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML being used (HTML5) -->
+<html lang="en">
+<!-- The root element of the HTML document, with language set to English -->
+
+<head>
+    <!-- The head section contains meta-information about the document -->
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page is responsive and scales properly on all devices -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Links to the Boxicons library for icons -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <!-- Specifies the favicon for the website -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tanks.css">
+    <!-- Links to the external CSS file for styling -->
+    <title>Octavion - Petrol Pump and Gas Station Management System</title>
+    <!-- Sets the title of the webpage -->
+</head>
+
+<body>
+
+    <div id="preloader">
+    </div>
+
+    <section id="sidebar">
+        <!-- The sidebar section for navigation -->
+        <a href="dashboard.html" class="brand">
+            <!-- Brand logo and name linking to the homepage -->
+            <img src="./assets/img/logo/logo.png" alt="logo">
+        </a>
+        <ul class="side-menu">
+            <!-- Side menu list for navigation links -->
+            <!-- <li><a href="dashboard.html" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li> -->
+            <!-- Dashboard link with an icon -->
+            <li class="divider" data-text="main">Main</li>
+            <!-- Divider with text "Main" -->
+            <li><a href="tanks.html"><i class='bx bxs-gas-pump icon'></i>Tanks<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="machine.html"><i class='bx bxs-layer icon'></i>Machines<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="dispensingunit.html"><i class='bx bxs-cylinder icon'></i>Dispensing Units<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="dailysales.html"><i class='bx bxs-bar-chart-alt-2 icon'></i>Daily Sales<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="operator.html"><i class='bx bxs-group icon'></i>Operators<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="fuelorder.html"><i class='bx bxs-truck icon'></i>Fuel Order<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="supplier.html"><i class='bx bxs-factory icon'></i>Suppliers<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="pricehistory.html"><i class='bx bxs-dollar-circle icon'></i>Price History<i class='bx bx-chevron-right icon-right'></i></a></li>
+            <li><a href="fuelinventory.html"><i class='bx bxs-business icon'></i>Fuel Inventory<i class='bx bx-chevron-right icon-right'></i></a></li>
+        </ul>
+    </section>
+    <!-- END OF SIDEBAR SECTION -->
+
+    <!-- NAVBAR SECTION -->
+    <section id="content">
+
+        <nav>
+            <!-- Navigation bar -->
+            <i class='bx bx-menu toggle-sidebar'></i>
+            <!-- Icon to toggle the sidebar -->
+            <form action="#">
+                <!-- Search form -->
+                <div class="form-group">
+                    <input type="text" placeholder="Search...">
+                    <!-- Search input field -->
+                    <i class='bx bx-search icon'></i>
+                    <!-- Search icon -->
+                </div>
+            </form>
+            <a href="#" class="nav-link" id="notification-link">
+                <!-- Notification link with a badge -->
+                <i class='bx bxs-bell icon'></i>
+                <span class="badge">5</span>
+            </a>
+            <div class="dropdown" id="notification-dropdown">
+                <!-- Notification dropdown content -->
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Notification 1</li>
+                        <li>Notification 2</li>
+                        <li>Notification 3</li>
+                        <li>Notification 4</li>
+                        <li>Notification 5</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="nav-link" id="message-link">
+                <!-- Message link with a badge -->
+                <i class='bx bxs-message-square-dots icon'></i>
+                <span class="badge">8</span>
+            </a>
+            <div class="dropdown" id="message-dropdown">
+                <!-- Message dropdown content -->
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Message No 1</li>
+                        <li>Message No 2</li>
+                        <li>Message No 3</li>
+                        <li>Message No 4</li>
+                        <li>Message No 5</li>
+                        <li>Message No 6</li>
+                        <li>Message No 7</li>
+                        <li>Message No 8</li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="divider"></span>
+            <!-- Divider for visual separation -->
+            <div class="profile">
+                <!-- User profile section -->
+                <img src="./assets/img/img.jpeg" alt="Profile Image">
+                <!-- Profile image -->
+                <ul class="profile-link">
+                    <!-- Profile dropdown menu -->
+                    <!-- <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+                    <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li> -->
+                    <li><a href="index.html"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END OF NAVBAR SECTION -->
+
+        <!-- MAIN CONTENT SECTION -->
+        <main>
+            <h1 class="title">Daily Sales</h1>
+
+            <ul class="breadcrumbs">
+                <!-- Breadcrumb navigation -->
+                <li><a href="dashboard.html">Home</a></li>
+                <li class="divider">/</li>
+                <li><a href="#" class="active">Daily Sales</a></li>
+            </ul>
+
+            <div class="data">
+                <div class="content-data">
+                    <div class="head">
+                        <h2>DAILY SALES DATA</h2>
+                        <button id="filterButton">ADD DETAILS</button>
+                    </div>
+                    <table id="tank-details-table" border="1" cellpadding="10" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Tank ID</th>
+                            <th>Machine ID</th>
+                            <th>Dispensing Unit ID</th>
+                            <th>Opening Date & Time</th>
+                            <th>Opening Reading</th>
+                            <th>Closing Date & Time</th>
+                            <th>Closing Reading</th>
+                            <th>Operator ID</th>
+                            <th>Operator Shift</th>
+                          </tr>
+                        </thead>
+                        <tbody id="table-body">
+                          <!-- Table data will be populated here -->
+                        </tbody>
+                    </table>
+                    <form action="/ds" method="POST" autocomplete="off">
+                        <div class="popup">
+                            <div class="close-btn">&times;</div>
+                            <h2>ADD SALES DETAILS</h2>
+                            <div class="form">
+                                <div class="input-field">
+                                    <label for="tank-name">Date:</label>
+                                    <input type="text" id="date" name="date">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-type">Tank ID:</label>
+                                    <input type="text" id="tankid" name="tankid">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-capacity">Machine ID:</label>
+                                    <input type="text" id="machineid" name="machineid">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-material">Dispensing Unit ID:</label>
+                                    <input type="text" id="duid" name="duid">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-weight">Opening Date & Time:</label>
+                                    <input type="text" id="openingdateandtime" name="openingdateandtime">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-weight">Opening Reading:</label>
+                                    <input type="text" id="openingreading" name="openingreading">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-weight">Closing Date & Time:</label>
+                                    <input type="text" id="closingdateandtime" name="closingdateandtime">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-weight">Closing Reading:</label>
+                                    <input type="text" id="closingreading" name="closingreading">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-weight">Operator ID:</label>
+                                    <input type="text" id="operatorid" name="operatorid">
+                                </div>
+                                <div class="input-field">
+                                    <label for="tank-weight">Operator Shift:</label>
+                                    <input type="text" id="operatorshift" name="operatorshift">
+                                </div>
+                                <div class="input-field">
+                                    <button id="filterButton" onclick="addOnClick()">ADD SALES DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </main>
+        <!-- END OF MAIN CONTENT SECTION -->
+    </section>
+    <!-- END OF CONTENT SECTION -->
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        // Hide preloader and display main content after 3 seconds
+        setTimeout(function () {
+            document.querySelector('.preloader').classList.add('fade-out');
+            document.querySelector('.main-content').classList.add('fade-in');
+        }, 3000);
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+    <!-- Script for Chart.js zoom plugin -->
+    <script src="dailysales.js"></script>
+    <!-- Link to external JavaScript file for additional functionality -->
+</body>
+
+</html>
