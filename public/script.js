@@ -313,6 +313,7 @@ function calculateDailySales(dsData) {
             },
             stacked: true, // Enable stacking
 	    beginAtZero: true, // Ensure y-axis starts at 0
+            min: 0,          // Explicitly set the minimum value for y-axis
           },
         },
       },
