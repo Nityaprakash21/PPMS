@@ -312,6 +312,7 @@ function calculateDailySales(dsData) {
               text: 'Sales',
             },
             stacked: true, // Enable stacking
+	    beginAtZero: true, // Ensure y-axis starts at 0
           },
         },
       },
